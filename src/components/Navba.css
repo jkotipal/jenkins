@@ -1,0 +1,37 @@
+.container{
+    height: 50px;
+    background-color: rgb(116, 104, 104);
+    display: flex;
+    padding: 10px 20px;
+    justify-content:space-between;
+    align-items: center;
+}
+.left{
+    flex: 1;
+    display: flex;
+ 
+}
+.search{
+    margin-left: 25px;
+    padding: 5px;
+    /* border: 2px solid lightblue; */
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.center{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 25px;
+    flex: 1;
+    text-align: center;
+}
+
+.right{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
