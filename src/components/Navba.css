@@ -1,5 +1,6 @@
 .container{
     height: 50px;
+    
     background-color: rgb(116, 104, 104);
     display: flex;
     padding: 10px 20px;

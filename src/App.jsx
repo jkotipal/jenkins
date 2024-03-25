@@ -1,23 +1,15 @@
-
 import Cart from "./pages/Cart";
 import { Home } from "./pages/Home";
 import Login from "./pages/Login";
 import ProductList from "./pages/ProductList";
 import ProductSIngle from "./components/ProductSIngle";
 import { ProductRings } from "./components/ProductRings";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-
-  Navigate
-  
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Register from "./pages/Register";
 import ProductItems from "./components/ProductItems";
 
 function App() {
-  const user=false
+  const user = false;
   return (
     <BrowserRouter>
       <Routes>
