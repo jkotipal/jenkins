@@ -1,7 +1,7 @@
 .container{
     height: 50px;
     
-    background-color: rgb(116, 104, 104);
+    background-color: rgb(207, 207, 207);
     display: flex;
     padding: 10px 20px;
     justify-content:space-between;
@@ -28,11 +28,13 @@
     flex: 1;
     text-align: center;
 }
+.text{
+    text-decoration: none;
+    color: rgb(234, 148, 18);
+}
 
 .right{
     flex: 1;
     display: flex;
-    justify-content: space-around;
-    
-    
+    justify-content: space-around;  
 }

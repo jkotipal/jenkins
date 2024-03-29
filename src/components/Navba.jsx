@@ -14,14 +14,20 @@ const Navba = () => {
         </div>
       </div>
       <div className="center">
-        <Link to="/" type="text"><h1>Gold $ite</h1></Link>
+        <Link to="/" type="text" className="text">
+          <h1>Gold $ite</h1>
+        </Link>
       </div>
       <div className="right">
         <div>
-          <Link to="/register">Register</Link>
+          <Link to="/register" className="text">
+            Register
+          </Link>
         </div>
         <div>
-          <Link to="/login">Sign in</Link>
+          <Link to="/login" className="text">
+            Sign in
+          </Link>
         </div>
         <div>
           <Link to="/cart">
