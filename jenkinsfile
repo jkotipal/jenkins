@@ -11,7 +11,7 @@ pipeline {
             steps {
                 script {
                     // Execute Ansible playbook on Build Server
-                    sh "ssh -i ../id_rsa ubuntu@13.51.233.168 'ansible-playbook /home/ubuntu/playbook.yaml'"                    // 'ansible-playbook /home/ubuntu/playbook.yaml'"
+                    sh "ssh -i ../id_rsa ubuntu@172.31.25.16 'ansible-playbook /home/ubuntu/playbook.yaml'"                    // 'ansible-playbook /home/ubuntu/playbook.yaml'"
                 
                     
                     }
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     // Execute deployment playbook on Deploy Server
-                    sh "ssh -i ../id_rsa ubuntu@13.51.233.168 'ansible-playbook /home/ubuntu/deploy.yaml'"
+                    sh "ssh -i ../id_rsa ubuntu@172.31.25.16 'ansible-playbook /home/ubuntu/deploy.yaml'"
                 }
             }
         }
