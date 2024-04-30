@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     stages {
-        stage('Trigger Ansible Script on Build Server') {
+        stage('Build Docker images on Build Server') {
             steps {
                 script {
                     // Execute Ansible playbook on Build Server
