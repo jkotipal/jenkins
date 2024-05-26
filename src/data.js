@@ -9,7 +9,7 @@ export const sliderItems = [
   {
     id: "2",
     img: "assets/rings/main.png",
-    title: "Rings for Sale",
+    title: "Rings for Hari",
     desc: "Rings sale at 50% offer",
     bg: "aqua",
   },
