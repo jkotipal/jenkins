@@ -2,7 +2,7 @@ export const sliderItems = [
   {
     id: "1",
     img: "assets/braclet/main.jfif",
-    title: "Braclet for sagar kakkala",
+    title: "sale for sagar kakkala",
     desc: "Barclets sale at 50% offer",
     bg: "green",
   },
