@@ -1,4 +1,4 @@
-FROM node:18 AS build
+FROM node:18 AS buildmachine
 
 # Set the working directory in the container
 WORKDIR /app
@@ -18,7 +18,7 @@ RUN npm run build
 FROM nginx:alpine
 
 # Copy the built React app to Nginx's web server directory
-COPY --from=build /app/build /usr/share/nginx/html
+COPY --from=buildmachine /app/build /usr/share/nginx/html
 
 # Expose port 80 for the Nginx server
 EXPOSE 80
