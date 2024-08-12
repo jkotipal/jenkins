@@ -20,7 +20,7 @@ FROM nginx:alpine
 
 # Copy the built React app to Nginx's web server directory
 ###uncomment below line if you are practising before helm charts####
-#COPY --from=build /app/build /usr/share/nginx/html
+#COPY --from=buildmachine /app/build /usr/share/nginx/html
 ###comment below line if you are practising before helm charts#####
 COPY build /usr/share/nginx/html
 
