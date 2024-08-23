@@ -2,6 +2,16 @@ pipeline {
     agent any
     
     stages {
+        stage('Run Sonarqube') {
+            environment {
+                scannerHome = tool 'sonarqubescan';
+                 }
+            steps {
+              withSonarQubeEnv(credentialsId: 'sonarqube', installationName: 'sonarqubeserver') {
+                sh "${scannerHome}/bin/sonar-scanner"
+                 }
+            }
+        }
         stage('Build Docker images on Build Server') {
             steps {
                 script {
