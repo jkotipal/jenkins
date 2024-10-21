@@ -2,7 +2,7 @@ export const sliderItems = [
   {
     id: "1",
     img: "assets/braclet/main.jfif",
-    title: "Mail and slack alerts has been configured- test2",
+    title: "Mail and slack alerts has been configured- test3",
     desc: "This is now in new commit",
     bg: "green",
   },
