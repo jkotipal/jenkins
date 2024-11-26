@@ -2,7 +2,7 @@ export const sliderItems = [
   {
     id: "1",
     img: "assets/braclet/main.jfif",
-    title: "Mail and slack alerts has been configured succesfully",
+    title: "Helm charts have been successfully configured with ArgoCD",
     desc: "This is now in new commit",
     bg: "green",
   },
