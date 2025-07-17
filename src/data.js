@@ -2,14 +2,14 @@ export const sliderItems = [
   {
     id: "1",
     img: "assets/braclet/main.jfif",
-    title: "Helm charts have been successfully configured using ArgoCD",
-    desc: "This is now in new commit",
+    title: "Barclets for Hands",
+    desc: "Barclets sale at 50% offer",
     bg: "green",
   },
   {
     id: "2",
     img: "assets/rings/main.png",
-    title: "Rings for Hari",
+    title: "Rings for Fingers",
     desc: "Rings sale at 50% offer",
     bg: "aqua",
   },
@@ -21,7 +21,6 @@ export const sliderItems = [
     bg: "orange",
   },
 ];
-
 
 export const categories = [
   {
@@ -140,7 +139,6 @@ export const allBraclet = [
     id: "4",
     img: "assets/braclet/b4.jfif",
   },
- 
 ];
 
 export const allChains = [
