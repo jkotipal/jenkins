@@ -1,27 +1,19 @@
-FROM node:18 as build
+###uncomment the multi stage build if you are practising before helm, comment the second docker file#########
+#FROM node:18 AS buildmachine
+#WORKDIR /app
+#COPY package*.json ./
+#RUN npm install
+#COPY . .
+#RUN npm run build
+#
+#FROM nginx:alpine
+#COPY --from=buildmachine /app/build /usr/share/nginx/html
+#EXPOSE 80
+#CMD ["nginx", "-g", "daemon off;"]
 
-# Set the working directory in the container
-WORKDIR /app
 
-# Copy package.json and package-lock.json from GitHub repository
-
-COPY package*.json ./
-
-# Install dependencies
-RUN npm install
-
-COPY . .
-# Build the React app for production
-RUN npm run build
-
-# Use Nginx as the production server
+###the below docker file to be commented if you are practising before helm charts###
 FROM nginx:alpine
-
-# Copy the built React app to Nginx's web server directory
-COPY --from=build /app/build /usr/share/nginx/html
-
-# Expose port 80 for the Nginx server
+COPY build /usr/share/nginx/html
 EXPOSE 80
-
-# Start Nginx when the container runs
 CMD ["nginx", "-g", "daemon off;"]

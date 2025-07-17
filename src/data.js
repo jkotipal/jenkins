@@ -2,8 +2,8 @@ export const sliderItems = [
   {
     id: "1",
     img: "assets/braclet/main.jfif",
-    title: "Braclet for sagar",
-    desc: "Barclets sale at 50% offer",
+    title: "Helm charts have been successfully configured using ArgoCD",
+    desc: "This is now in new commit",
     bg: "green",
   },
   {
