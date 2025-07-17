@@ -1,74 +1,90 @@
-.productdiv{
-    width: auto;
-    background-color: cornsilk;
-}
-.filter{
-    width: auto;
-    height:25px;
-    display: flex;
-    align-items: center;
-    justify-content:space-evenly;
-        
-}
-
-.sort{
-    display: flex;
-    flex-direction: row;
-}
-
-.size {
-    display: flex;
-    flex-direction: row;
-}
-
-.color{
-    width: 100px;
-    height: 25px;
-    display: flex;
-    align-items: center;
-    margin:auto;
-    
-}
-
-.Size {
-    width: 100px;
-    height: 25px;
-    margin: auto;
-}
-
-
-
-
-
-.productImg{
-
-    background-color: burlywood;
-    
-}
-
-.imgContainer{
+/* Modern Gold Site Product Items */
+.productdiv {
     width: 100%;
-    height: 300px;
-    background-color:rgb(32, 196, 202);
-    display: flex;
-    justify-content:left;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 20px;
-
-    
-    
-
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fffbe6 60%, #FFD700 100%);
+    padding: 40px 0;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
 }
 
-.eachimage{
+.filter {
+    width: 90%;
+    margin: 0 auto 32px auto;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #fffbe6;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(255,215,0,0.10);
+    padding: 12px 0;
+}
 
-    width: 250px;
-    height: 250px;
-    border-radius: 50px;
-    margin: 25px;
-    
-    
-    
-    
+.sort, .size {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: #FFD700;
+}
+
+.color, .Size {
+    width: 120px;
+    height: 32px;
+    margin: auto;
+    border-radius: 8px;
+    border: 2px solid #FFD700;
+    background: #fffbe6;
+    font-weight: 500;
+    color: #1a1a1a;
+    box-shadow: 0 1px 6px rgba(255,215,0,0.10);
+    padding-left: 8px;
+}
+
+.productImg {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+.imgContainer {
+    background: #fffbe6;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(255,215,0,0.10);
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    min-width: 180px;
+    max-width: 220px;
+}
+
+.eachimage {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #FFD700;
+    box-shadow: 0 1px 6px rgba(255,215,0,0.15);
+}
+
+.imgContainer button {
+    background: linear-gradient(90deg, #FFD700 60%, #fffbe6 100%);
+    color: #1a1a1a;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(255,215,0,0.10);
+    transition: background 0.2s;
+}
+.imgContainer button:hover {
+    background: #FFD700;
 }

@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import "./Navba.css";
 import { Badge } from "@mui/material";
+import { CartContext } from "./CartContext";
 import { Link } from "react-router-dom";
 const Navba = () => {
+  const { cartItems } = useContext(CartContext);
   return (
     <div className="container">
       <div className="left">
@@ -31,7 +33,7 @@ const Navba = () => {
         </div>
         <div>
           <Link to="/cart">
-            <Badge badgeContent={4} color="primary">
+            <Badge badgeContent={cartItems.length} color="primary">
               <ShoppingCartIcon color="action" />
             </Badge>
           </Link>

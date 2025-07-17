@@ -7,3 +7,28 @@
     justify-content: center;
     display: flex;
 }
+.scroll-announcement {
+  background: linear-gradient(90deg, #FFD700 60%, #fffbe6 100%);
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 8px 0;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #FFD700;
+  box-shadow: 0 2px 8px rgba(255,215,0,0.10);
+  overflow: hidden;
+  position: relative;
+}
+.scroll-announcement span {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 16s linear infinite;
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
