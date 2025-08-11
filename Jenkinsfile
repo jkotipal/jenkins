@@ -5,9 +5,9 @@ pipeline {
             steps {
                 script {
                     // Execute build.sh on Build Server
-                    sh "ssh ubuntu@13.232.253.179 ' ./home/ubuntu/build.sh'"
+                    sh "ssh ubuntu@13.232.253.179 './home/ubuntu/build.sh'"
                 }
             }
         }
-   }
+    }
 }
